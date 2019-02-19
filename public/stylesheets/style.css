@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black
+}
+
+body {
+  padding: 50px;
+}
+
+header > nav {
+  display: flex;
+  background-color: rgb(92, 241, 255);
+  color: black;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  border: 0;
+}
+
+
+nav > a {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 30px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+a.active {
+  font-size: 20px;
+}
+
+.add {
+  background-color: rgb(92, 241, 255);
+}
+
+table {
+  table-layout: auto;
+  border: 1px solid black;
+  margin: 0 auto; 
+  font-size: 18px;
+  text-align: center;
+}
+
+thead {
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+}
+
+tbody {
+  border: 1px solid black;
+}
+
+td {
+  padding: 3px;
+  
+}
+
+#flight-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(90px, auto));
+  grid-gap: 5px;
+  max-width: 500px;
+  margin: 3px 3px;
+}
+
+#flight-details > h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 0 auto;
+} 

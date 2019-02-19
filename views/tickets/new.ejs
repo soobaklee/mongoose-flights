@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+    <h2>Ticket Booking for Flight</h2>
+    <form id="add-ticket-form" action="/flights/<%= flight._id %>/tickets" method="POST">
+        <label>Passenger Name: 
+            <input type="text" name="pName">
+        </label><br>
+        <label>Price:
+            <input type="number" name="price">
+        </label><br>
+        <label>Seat:
+            <input type="text" enum='/[A-F][1-9]\D?/' name="seat">
+        </label>
+        <input type="submit" value="Add Ticket">
+    </form>
+
+</body>
+</html>
